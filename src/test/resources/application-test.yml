@@ -1,0 +1,19 @@
+
+logging:
+  level:
+    root: info
+
+contaistner:
+  application-file: classpath:application-contaistner.yml
+  services:
+    postgres-it:
+      image: postgres:12-alpine
+      ports:
+        - 5432/tcp
+      environment:
+        - POSTGRES_USER=user
+        - POSTGRES_PASSWORD=password
+        - POSTGRES_DB=db
+      tmpfs:
+        - /var/lib/postgresql/data
+

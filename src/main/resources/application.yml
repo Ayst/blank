@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db?currentSchema=public
+    username: user
+    password: password
+
+logging:
+  level:
+    root: info

@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${contaistner.services.postgres-it.ipAddress}:5432/db?currentSchema=public
+    username: user
+    password: password
